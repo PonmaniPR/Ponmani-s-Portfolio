@@ -1,0 +1,10 @@
+.footer {
+  color: var(--default-color);
+  background-color: var(--header-footer-background);
+  font-size: 14px;
+  padding: 1px 0;
+
+  p {
+    margin: 0.5%;
+  }
+}

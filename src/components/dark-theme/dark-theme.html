@@ -1,0 +1,11 @@
+<a
+  class="theme-toggle d-flex align-items-center justify-content-center"
+  [class.move-up]="scrollService.showScrollTop()"
+  (click)="themeService.toggleTheme()"
+>
+  @if (themeService.isDark()) {
+    <i class="bi bi-sun-fill"></i>
+  } @else {
+    <i class="bi bi-moon-stars-fill"></i>
+  }
+</a>

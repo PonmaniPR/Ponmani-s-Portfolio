@@ -1,0 +1,67 @@
+<header id="header" class="header d-flex align-items-center sticky-top">
+  <div class="container-fluid position-relative d-flex align-items-center">
+    <a routerLink="/" class="logo d-flex align-items-center me-auto me-xl-0">
+      <img src="/images/ponmani-logo.png" alt="Logo" />
+      <h1 class="sitename">Ponmani PR</h1>
+    </a>
+
+    <nav class="navmenu mx-auto" [class.mobile-nav-active]="menuOpen()">
+      <ul>
+        <li>
+          <a
+            routerLink="/"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            (click)="closeMenu()"
+          >
+            Home
+          </a>
+        </li>
+
+        <li>
+          <a routerLink="/about" routerLinkActive="active" (click)="closeMenu()"> About </a>
+        </li>
+
+        <li>
+          <a routerLink="/resume" routerLinkActive="active" (click)="closeMenu()"> Resume </a>
+        </li>
+
+        <li>
+          <a routerLink="/certificates" routerLinkActive="active" (click)="closeMenu()">
+            Certificates
+          </a>
+        </li>
+
+        <li>
+          <a routerLink="/contact" routerLinkActive="active" (click)="closeMenu()"> Contact </a>
+        </li>
+      </ul>
+
+      <i
+        class="mobile-nav-toggle d-xl-none"
+        [class.bi-list]="!menuOpen()"
+        [class.bi-x]="menuOpen()"
+        (click)="toggleMenu()"
+      >
+      </i>
+    </nav>
+
+    <div class="header-social-links ms-auto">
+      <a href="https://www.linkedin.com/in/ponmanipr" target="_blank">
+        <i class="bi bi-linkedin"></i>
+      </a>
+
+      <a href="https://github.com/PonmaniPR" target="_blank">
+        <i class="bi bi-github"></i>
+      </a>
+
+      <a href="https://www.instagram.com/wahnsinnig_._/" target="_blank">
+        <i class="bi bi-instagram"></i>
+      </a>
+
+      <a href="https://x.com/ponmaniraj2609" target="_blank">
+        <i class="bi bi-twitter-x"></i>
+      </a>
+    </div>
+  </div>
+</header>
